@@ -1,0 +1,37 @@
+Movie Data
+
+Spider-Man: No Way Home
+Tom Holland
+Action
+
+Dune
+Zendaya
+Adventure
+
+Eternals
+Angelina Jolie
+Action
+
+French Dispatch
+Timothy Chalamet
+Comedy
+
+In The Heights
+Anthony Ramos
+Musical
+
+Cars 2
+Owen Wilson
+Adventure
+
+Shrek
+Mike Myers
+Comedy
+
+Parasite
+Park So-dam
+Thriller
+
+Dhoom 2
+Hrithik Roshan
+Action

@@ -1,0 +1,190 @@
+/* YOUR STYLES HERE */
+
+/*Floating Smoke Animation */
+  /*create the box area*/
+
+.animation-area{
+  background: linear-gradient(to left, #BEDE89,#FFC0CB);
+  width: 100%;
+  height: 100vh; /*important that it's vh, so 100% of the viewport height regardless*/
+}
+
+.box-area {
+  position: absolute;
+  top: 0%;
+  left: 0%; /*start bottom right*/
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+  /*specific square(s) creation*/
+.box-area li{
+  position: absolute;
+  display:block;
+  list-style: none; /*creates the square*/
+  background: rgba(255,255,255);
+  animation: animate 20s linear infinite;
+  bottom: -150px;
+}
+
+/*create the li of squares to say "this is worth 25 extra credit points"*/
+  /*ps squares are not in order of the sentance*/
+
+.box-area li:nth-child(1){
+  left: 64%;
+  width: 30px;
+  height: 30px;
+  animation-delay:0s;
+}
+.box-area li:nth-child(2){
+  left: 63%;
+  width: 30px;
+  height: 30px;
+  animation-delay: 1.5s;
+  animation-duration: 10s;
+}
+
+.box-area li:nth-child(3){
+  left: 62%;
+  width: 30px;
+  height: 30px;
+  animation-delay: 5.5s;
+}
+.box-area li:nth-child(4){
+  left: 63%;
+  width: 30px;
+  height: 30px;
+  animation-delay: 0s;
+  animation-duration: 15s;
+}
+.box-area li:nth-child(5){
+  left: 62%;
+  width: 40px;
+  height: 40px;
+  animation-delay: 0s;
+}
+.box-area li:nth-child(6){
+  left: 61%;
+  width: 30px;
+  height: 30px;
+  animation-delay: 3.5s;
+}
+.box-area li:nth-child(7){
+  left: 63%;
+  width: 30px;
+  height: 30px;
+  animation-delay: 3.5s;
+}
+
+  /*animate squares from 1 to 0 opacity*/
+
+@keyframes animate {
+  0% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  100%{
+    transform: translateY(-800px) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+/*Menu Stuff*/
+
+#menu {
+  padding: 5px 10px;
+  display: flex;
+  align-items: center;
+  font-family: sans-serif;
+}
+#menu2 {
+  padding: 5px 10px;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(to left, #BEDE89,#FFC0CB);
+  font-family: serif;
+}
+.menu-item {
+  font-size: 15px;
+  color: black;
+  margin: 0px 10px;
+  text-decoration: none;
+  float: right;
+
+}
+.menu-item:hover {
+  text-decoration: underline;
+}
+
+/*CS1301 Page Stuff*/
+  /*pfp*/
+
+#profile-pic {
+  height: 32px;
+  width: 32px;
+  border-radius: 16px;
+}
+#profile-pic:hover {
+  box-shadow: 0px 0px 5px #C2C2C2
+}
+#store-link {
+  margin-right: auto;
+}
+#main-logo {
+  width: 272px
+}
+
+  /*search bar*/
+
+#search {
+  margin-top: 120px;
+  text-align: center;
+}
+#search-bar {
+  height: 34px;
+  font-size: 17px;
+  border-radius: 17px;
+  border: 1px solid #C2C2C2;
+  width: 90% ;
+  max-width: 500px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 30px;
+}
+#search-bar:hover,
+#search-bar:focus {
+  box-shadow: 0px 0px 5px #C2C2C2
+}
+#search-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.search-button {
+  margin: 8px;
+  padding: 8px 15px;
+  cursor: pointer;
+  background-color: #f8f9fa;
+  border: 1px solid #4b4b4b;
+  border-radius 4px;
+  font-size: 14px;
+}
+.search-button:hover {
+  box-shadow: 0px 0px 5px #C2C2C2
+}
+
+/*Profile.html Stuff */
+
+#drakepic {
+  background: linear-gradient(to left, #BEDE89,#FFC0CB);
+  margin: 8px;
+  padding: 8px 15px;
+  border: 1px solid #4b4b4b;
+  border-radius 4px;
+  height: 400px;
+  width: 40% ;
+  max-width: 500px;
+  padding-left: 40px;
+  padding-right: 20px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
