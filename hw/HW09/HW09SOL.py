@@ -13,12 +13,10 @@ Returns: total (int)
 """
 
 def pageNumbers(bookList) :
-    if len(bookList) == 0: #Base Case
+    if len(bookList) == 0: 
         return 0
     else :
         return bookList[0] + pageNumbers(bookList[1:4]) 
-
-
 
 #########################################
 
@@ -29,19 +27,13 @@ Returns: None (NoneType)
 """
 
 def letterPyramid(letter, rows) :
-    if rows == 1: #Base Case
+    if rows == 1: 
         return {}
-
-    
     else:
         if letter.lower() == letter and letter.isalpha():
             letterPyramid(letter, rows-1)
             print(letter *rows)
             
-        else :
-            pass
-
-print(letterPyramid("a", 7))
 #########################################
         
 """
@@ -50,11 +42,8 @@ Parameters: usernames (list)
 Returns: aDict (dict)
 """
 
-
-
-
 def specialChar(usernames) :
-    if len(usernames) == 0 : #Base Case
+    if len(usernames) == 0 : 
         return {}
     else :
         speciCount = 0
@@ -67,21 +56,8 @@ def specialChar(usernames) :
         aDict = specialChar(usernames)
         aDict[rememberName] = speciCount
     return aDict
-    pass
+  
         
-        
-
-        
-        
-        
-    
-
-
-
-
-
-
-    
 #########################################
 
 """
@@ -97,7 +73,7 @@ def messageDecoder(hiddenMessage, characters) :
             messageDecoder(hiddenMessage, characters)
         else :
             continue
-
+        
     return hiddenMessage
             
 #########################################
@@ -107,7 +83,6 @@ Function Name: stringCombiner()
 Parameters: stringList (list)
 Returns: combinedString (str)
 """
-
 
 def stringCombiner(stringList) :
     for i in range(len(stringList)) : #Base Case
